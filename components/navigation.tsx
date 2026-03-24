@@ -19,7 +19,7 @@ export function Navigation() {
       <div className="fixed top-4 left-0 right-0 z-50 flex justify-center">
         <PillNav
           logo="/logo.svg"
-          logoAlt="OracleNet Logo"
+          logoAlt="Orb Oracle logo"
           items={navItems}
           activeHref={pathname}
           ease="power3.easeOut"

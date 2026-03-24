@@ -42,17 +42,17 @@ export default function HomePage() {
         <div className="container mx-auto px-4 text-center z-10 relative">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium mb-6 sm:mb-8 text-balance tracking-wide px-4" style={{ fontStyle: 'oblique 15deg' }}>
-              Orb Oracle: 
-              <div><span className="text-primary">The Price of Everything</span></div>
+              Orb Oracle:
+              <div><span className="text-primary">Token-weighted price discovery onchain</span></div>
             </h1>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
               <Button asChild size="lg" className="text-lg px-8 bg-white text-black hover:bg-gray-100">
                 <Link href="/create">
-                  Get Started
+                  Create an Oracle
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8 bg-transparent border-gray-600 text-gray-400 hover:bg-gray-800">
-                <Link href="/explorer">Learn More</Link>
+                <Link href="/explorer">Explore Live Oracles</Link>
               </Button>
             </div>
           </div>
@@ -63,9 +63,9 @@ export default function HomePage() {
       <section className="h-screen flex items-center justify-center">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 sm:mb-16 px-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 tracking-wide" style={{ fontStyle: 'oblique 15deg' }}>Why choose OracleNet?</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 tracking-wide" style={{ fontStyle: 'oblique 15deg' }}>Why use Orb Oracle?</h2>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Enterprise-grade infrastructure for the next generation of decentralized applications
+              A lean frontend for exploring oracles, submitting values, and managing oracle participation directly from your wallet
             </p>
           </div>
 
@@ -75,9 +75,9 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Zap className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle>Lightning Fast</CardTitle>
+                <CardTitle>Continuous Price Feeds</CardTitle>
                 <CardDescription>
-                  Sub-second data feeds with 99.9% uptime guarantee for mission-critical applications
+                  Track the latest submitted and aggregated values from live onchain oracles without leaving the app
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -87,9 +87,9 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle>Secure & Reliable</CardTitle>
+                <CardTitle>Wallet-Native Actions</CardTitle>
                 <CardDescription>
-                  Multi-signature validation and cryptographic proofs ensure data integrity
+                  Connect a wallet to create an oracle, deposit weight tokens, submit prices, and manage withdrawals
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -99,9 +99,9 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Database className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle>Rich Data Sources</CardTitle>
+                <CardTitle>Transparent Participation</CardTitle>
                 <CardDescription>
-                  Connect to thousands of APIs, IoT devices, and real-world data providers
+                  Review oracle configuration, staking requirements, submission history, and participant balances in one place
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -114,20 +114,20 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 text-center px-4">
             <div>
-              <div className="text-4xl font-medium text-primary mb-2">1,247</div>
-              <div className="text-muted-foreground">Active Oracles</div>
+              <div className="text-4xl font-medium text-primary mb-2">Create</div>
+              <div className="text-muted-foreground">Launch new oracle instances</div>
             </div>
             <div>
-              <div className="text-4xl font-medium text-primary mb-2">$2.4B</div>
-              <div className="text-muted-foreground">Total Value Secured</div>
+              <div className="text-4xl font-medium text-primary mb-2">Explore</div>
+              <div className="text-muted-foreground">Inspect deployed oracle contracts</div>
             </div>
             <div>
-              <div className="text-4xl font-medium text-primary mb-2">99.9%</div>
-              <div className="text-muted-foreground">Uptime</div>
+              <div className="text-4xl font-medium text-primary mb-2">Submit</div>
+              <div className="text-muted-foreground">Post values and update weights</div>
             </div>
             <div>
-              <div className="text-4xl font-medium text-primary mb-2">50+</div>
-              <div className="text-muted-foreground">Supported Chains</div>
+              <div className="text-4xl font-medium text-primary mb-2">Verify</div>
+              <div className="text-muted-foreground">Review history and parameters</div>
             </div>
           </div>
         </div>
@@ -137,13 +137,13 @@ export default function HomePage() {
       <section className="h-screen flex items-center justify-center">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto px-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-6 tracking-wide" style={{ fontStyle: 'oblique 15deg' }}>Ready to build the future?</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-6 tracking-wide" style={{ fontStyle: 'oblique 15deg' }}>Ready to participate?</h2>
             <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8">
-              Join thousands of developers building the next generation of decentralized applications
+              Launch an oracle, inspect live feeds, or connect your wallet to start contributing onchain values
             </p>
             <Button asChild size="lg" className="text-lg px-8">
               <Link href="/create">
-                Get Started <ArrowRight className="ml-2 h-5 w-5" />
+                Open Create Flow <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>

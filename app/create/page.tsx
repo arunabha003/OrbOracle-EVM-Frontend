@@ -9,7 +9,7 @@ export default function CreatePage() {
         <div className="mb-8 text-center">
           <h1 className="text-4xl bg-gradient-to-r from-white to-primary bg-clip-text text-transparent mb-2 tracking-wide" style={{ fontStyle: 'oblique 15deg' }}>Create Oracle</h1>
           <p className="text-slate-400 text-xl max-w-3xl mx-auto">
-            Deploy the on‑chain Oracle contract by providing the exact constructor parameters.
+            Configure the oracle contract, choose its weight token, and deploy a new onchain oracle instance from your connected wallet.
           </p>
         </div>
         <CreateOracleIntegrated />

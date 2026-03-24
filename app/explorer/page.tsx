@@ -31,6 +31,9 @@ export default function ExplorerPage() {
           <h1 className="text-5xl font-medium tracking-wide mb-6 bg-gradient-to-r from-white to-primary bg-clip-text text-transparent" style={{ fontStyle: 'oblique 15deg' }}>
             Orb Oracle Explorer
           </h1>
+          <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+            Browse deployed oracles, inspect live metadata, and jump into the full interaction view for any feed on the connected network.
+          </p>
         </div>
 
         {/* Search & Filter */}
@@ -38,7 +41,7 @@ export default function ExplorerPage() {
           <div className="relative group">
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground opacity-0 group-focus-within:opacity-100 transition-opacity duration-300" />
             <Input
-              placeholder="Search oracles..."
+              placeholder="Search by oracle name or description..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="h-12 bg-card/50 border border-primary/30 rounded-xl font-light transition-all duration-300 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 focus:bg-card/70 pl-4 focus:pl-12 group-focus-within:scale-105"
@@ -63,7 +66,7 @@ export default function ExplorerPage() {
               {error}
             </p>
             <p className="text-sm text-slate-400 mb-4">
-              Make sure you're connected to the correct network and the Oracle Factory is deployed.
+              Make sure your wallet is on a supported network and that the Oracle Factory is deployed there.
             </p>
           </div>
         ) : filteredOracles.length > 0 ? (
@@ -79,7 +82,7 @@ export default function ExplorerPage() {
               No oracles deployed yet
             </p>
             <p className="text-sm text-slate-400 mb-8">
-              Be the first to create an oracle on this network!
+              Connect a supported wallet and launch the first oracle for this network.
             </p>
             <a
               href="/create"
